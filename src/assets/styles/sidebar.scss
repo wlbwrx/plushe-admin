@@ -1,0 +1,46 @@
+#app {
+    .sidebar-container {
+        transition: width 0.28s;
+        width: 200px;
+        height: 100%;
+        position: fixed;
+        font-size: 0px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        overflow: hidden;
+
+        .el-scrollbar {
+            height: 100%;
+            background: var(--el-menu-background-color);
+        }
+
+        &.has-logo {
+            .el-scrollbar {
+                height: calc(100% - 50px);
+            }
+        }
+
+        a {
+            display: inline-block;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .sub-el-icon {
+            margin-right: 12px;
+            margin-left: -2px;
+            font-size: 12px;
+        }
+
+        .el-menu-item i,
+        .el-submenu__title i {
+            color: #E7F1FF;
+            ;
+        }
+
+    }
+
+
+}

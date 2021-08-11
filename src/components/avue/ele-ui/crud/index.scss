@@ -1,0 +1,218 @@
+.avue-crud {
+  width: 100%;
+  max-height: 100%;
+  flex: 1;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  :deep() {
+    .el-dialog {
+      // margin-top: 5vh !important;
+
+      .el-dialog__body {
+        max-height: 75vh;
+        overflow-y: auto;
+      }
+
+      .el-form-item.hide {
+        display: none;
+      }
+
+      .el-textarea__inner {
+        min-width: 500px;
+      }
+    }
+
+
+    .avue-crud__table {
+      padding: 20px 30px;
+      flex: 1;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      border-top: 1px solid #edeef3;
+      // background: #edeef3;
+      min-height: 500px;
+
+      .el-table {
+        border-radius: 0px 8px 8px 8px;
+        flex: 1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+
+        .table-input {
+          width: 50%;
+          margin-right: 10px;
+        }
+
+        .cell {
+          text-align: center;
+          color: #606266;
+          max-height: 60px;
+
+          .text {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+
+          // .el-image__inner{
+          //   width: auto;
+          // }
+
+        }
+
+        th {
+          background: #F7F7F7;
+        }
+
+        .icon-loading {
+          animation: circle 0.5s infinite linear;
+        }
+
+        .el-table__body-wrapper {
+          flex: 1;
+
+          a {
+            color: blue;
+            text-decoration: underline;
+          }
+
+          .el-table__expand-icon+.text {
+            display: inline-block;
+            vertical-align: top;
+            height: 23px;
+          }
+
+          .el-table__placeholder+.text {
+            display: inline-block;
+
+          }
+        }
+
+        .el-table__header,
+        .has-gutter {
+          width: 100%;
+        }
+
+        .avue-crud__operation {
+          color: #F56C6C;
+          margin-right: 10px;
+          font-size: 12px;
+          cursor: pointer;
+        }
+
+        .editCustSngl,
+        .editSngl {
+          color: #3B91C8;
+        }
+
+        .avue-crud__operation:nth-last-of-type(1) {
+          margin-right: 0;
+        }
+
+        .icon-circle {
+          font-size: 12px;
+          margin-left: 5px;
+          color: #606266;
+        }
+
+        .icon-circle.success {
+          color: #67c23a;
+        }
+
+        .icon-circle.info {
+          color: #909399;
+        }
+
+        .icon-circle.warning {
+          color: #e6a23c;
+        }
+
+        .icon-circle.danger {
+          color: #f56c6c;
+        }
+
+        .icon-circle.primary {
+          color: #409eff;
+        }
+      }
+
+      .el-table__empty-block {
+        min-height: 400px;
+      }
+    }
+
+    .avue-crud__search {
+      padding: 20px 24px 0 30px;
+      .el-form--inline {
+        margin-bottom: 30px;
+      }
+
+      .el-button {
+        padding: 0 12px;
+        height: 32px;
+        min-height: 32px;
+        line-height: 32px;
+
+        .iconfont {
+          font-size: 14px;
+          margin-right: 5px;
+        }
+      }
+
+
+      .btn-el-icon-circle-plus {
+        background: #79BDA9;
+        color: #fff;
+      }
+
+
+      .el-form-item {
+        margin-bottom: 10px;
+        margin-right: 20px;
+        vertical-align: middle;
+
+        .el-form-item__label {
+          font-size: 13px;
+          color: #606266;
+        }
+      }
+
+      .el-input,
+      .el-cascader,
+      .el-input__icon,
+      .el-form-item__content,
+      .el-form-item__label,
+      .el-form-item,
+      .el-input__inner {
+        height: 32px;
+        line-height: 32px;
+        border-color: #C0C4CC;
+      }
+
+      .el-input {
+        width: 140px;
+      }
+
+    }
+
+  }
+
+  .img {
+    width: 40px;
+    display: inline-block;
+    margin-right: 10px;
+
+    :deep() {
+      .el-loading-spinner {
+        top: 0;
+        margin: 0;
+      }
+    }
+  }
+
+}

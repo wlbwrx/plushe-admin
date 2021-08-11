@@ -1,0 +1,15 @@
+.el-submenu .el-menu-item {
+    background: #1F2D3D;
+}
+
+.el-upload-list--picture-card .el-upload-list__item-status-label {
+    color: #000;
+}
+.el-menu,.el-scrollbar__view{
+    height: 100%;
+}
+.el-menu{
+    --el-menu-background-color: #304156;
+    --el-menu-item-font-color: #e7f1ff;
+    --el-menu-item-hover-fill: transparent;
+}
